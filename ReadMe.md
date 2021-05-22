@@ -79,3 +79,22 @@ You can use same method name as long as (siganture) argument different
 // void printGreeting(String name){}  ==>  printGreeting(String)
 // void printGreeting(String name, int langCode) {} ==>printGreeting(String,int)
 ```
+
+
+## Task 
+You need to create class call Program, program will have following details 
+1. programName - String - Mandatory
+2. programDesc - String 
+3. programType - Enum(FULLTIME, PARTTIME, WEEKEND)
+4. programCost  - double 
+
+
+
+User can create program by passing programName, please add 
+constraint that program name should be at-least 6 chars. 
+use may additionally create program with Desc or 
+name, desc, type or 
+name ,desc, type , cost
+
+if your dosn't provide any type default it FULLTIME
+
