@@ -1,7 +1,7 @@
 public class Program {
     private String name;
     private String desc;
-    private ProgramTypeEnum type;
+    private ProgramTypeEnum programType;
     private double cost;
 
     public Program(String name) {
@@ -9,7 +9,7 @@ public class Program {
            throw new RuntimeException("Name should be at-least 6 chars");
         }
         this.name = name;
-        this.type = ProgramTypeEnum.FULLTIME;
+        this.programType = ProgramTypeEnum.FULLTIME;
     }
 
     public Program(String name, String desc) {
@@ -17,9 +17,9 @@ public class Program {
         this.desc = desc;
     }
 
-    public Program(String name, String desc, ProgramTypeEnum type) {
+    public Program(String name, String desc, ProgramTypeEnum programType) {
         this(name,desc);
-        this.type = type;
+        this.programType = programType;
     }
 
     public Program(String name, String desc, ProgramTypeEnum type, double cost) {
@@ -32,7 +32,7 @@ public class Program {
         return "Program{" +
                 "name='" + name + '\'' +
                 ", desc='" + desc + '\'' +
-                ", type=" + type +
+                ", type=" + programType +
                 ", cost=" + cost +
                 '}';
     }
